@@ -1,74 +1,78 @@
 
-# 💻 Exercícios de Assembly x86 (NASM)
+# 💻 Assembly x86 (NASM) Exercises
 
-Este repositório contém diversos **exercícios em Assembly x86** utilizando o **NASM** (Netwide Assembler). Cada exercício demonstra conceitos fundamentais da programação em Assembly, como chamadas de sistema, manipulação de registradores e estrutura de programas.
+This repository contains various **x86 Assembly exercises** using **NASM** (Netwide Assembler). Each exercise demonstrates fundamental Assembly programming concepts, such as system calls, register manipulation, and program structure.
 
-## 📂 Estrutura do Repositório
+## 📂 Repository Structure
 
-📦 low-level-computing-assembly, Exercicios em andamento ...
+📦 low-level-computing-assembly, Exercises in progress...
 
-
- ├── 📁 01-hello-world       # Exemplo básico de "Hello, World!"
+```
+ ├── 📁 01-hello-world       # Basic "Hello, World!" example
  │   ├── hello.asm
  │   ├── README.md
- ├── 📁 02-soma-numeros      # Soma dois números e exibe o resultado
+ ├── 📁 02-sum-numbers       # (In Progress) Adds two numbers and displays the result
  │   ├── sum.asm
  │   ├── README.md
- ├── 📁 03-fatorial         # Calcula o fatorial de um número
+ ├── 📁 03-factorial         # (In Progress) Calculates the factorial of a number
  │   ├── factorial.asm
  │   ├── README.md
  ├── ...
- ├── README.md              # Visão geral do repositório
+ ├── README.md              # Repository overview
+```
 
-Cada exercício tem sua própria pasta com um `README.md` explicando o código.
+Each exercise has its own folder with a `README.md` explaining the code.
 
 ---
 
-## 🚀 Como Compilar e Executar os Exercícios
+## 🚀 How to Compile and Run the Exercises
 
-Todos os códigos foram escritos para **Linux (ELF 32-bit)** e utilizam chamadas de sistema (`int 0x80`).  
+All codes are written for **Linux (ELF 32-bit)** and use system calls (`int 0x80`).  
 
-### **1️⃣ Compilar com NASM**  
+### **1️⃣ Compile with NASM**  
 ```sh
-nasm -f elf32 arquivo.asm -o arquivo.o
+nasm -f elf32 file.asm -o file.o
 ```
 
-### **2️⃣ Lincar com o Linker `ld`**  
+### **2️⃣ Link with the `ld` Linker**  
 ```sh
-ld -m elf_i386 arquivo.o -o arquivo
+ld -m elf_i386 file.o -o file
 ```
 
-### **3️⃣ Executar**  
+### **3️⃣ Run**  
 ```sh
-./arquivo
+./file
 ```
 
-Caso esteja rodando em um sistema **64-bit**, pode ser necessário instalar as bibliotecas **32-bit**. No Ubuntu, por exemplo:  
+If you are running on a **64-bit system**, you may need to install **32-bit libraries**. On Ubuntu, for example:  
 ```sh
 sudo apt install gcc-multilib
 ```
 
+---
 
-## 📌 Conteúdos dos Exercícios
+## 📌 Exercise Contents
 
-| 🚀 Exercício          | 📖 Descrição |
+| 🚀 Exercise          | 📖 Description |
 |----------------------|------------------------------------------------|
-| `01-hello-world`    | Imprime `"Hello, World!"` no terminal. |
-| `02-soma-numeros`   | Soma dois números e exibe o resultado. |
-| `03-fatorial`       | Calcula o fatorial de um número inteiro. |
-| `04-string-length`  | Calcula o tamanho de uma string. |
-| `05-inverter-string` | Inverte uma string dada pelo usuário. |
-| ...                 | Outros exercícios serão adicionados futuramente. |
+| `01-hello-world`    | Prints `"Hello, World!"` to the terminal. |
+| `02-sum-numbers`    | 🚧 *In Progress* - Adds two numbers and displays the result. |
+| `03-factorial`      | 🚧 *In Progress* - Calculates the factorial of an integer. |
+| `04-string-length`  | 🚧 *In Progress*- Computes the length of a string. |
+| `05-reverse-string` | 🚧 *In Progress*- Reverses a user-provided string. |
+| ...                 | More exercises will be added in the future. |
 
 
-## 🛠️ Requisitos
+
+## 🛠️ Requirements
 
 - **NASM** (Netwide Assembler)
-- **LD** (Linker ELF 32-bit)
-- **Linux** (ou WSL no Windows)
+- **LD** (ELF 32-bit linker)
+- **Linux** (or WSL on Windows)
 
-Para instalar o NASM no Ubuntu/Debian:
+To install NASM on Ubuntu/Debian:
 ```sh
 sudo apt update && sudo apt install nasm
 ```
+
 
