@@ -5,8 +5,9 @@ Este repositório contém diversos **exercícios em Assembly x86** utilizando o 
 
 ## 📂 Estrutura do Repositório
 
-```
-📦 assembly-exercises
+📦 low-level-computing-assembly, Exercicios em andamento ...
+
+
  ├── 📁 01-hello-world       # Exemplo básico de "Hello, World!"
  │   ├── hello.asm
  │   ├── README.md
@@ -18,7 +19,6 @@ Este repositório contém diversos **exercícios em Assembly x86** utilizando o 
  │   ├── README.md
  ├── ...
  ├── README.md              # Visão geral do repositório
-```
 
 Cada exercício tem sua própria pasta com um `README.md` explicando o código.
 
@@ -48,7 +48,6 @@ Caso esteja rodando em um sistema **64-bit**, pode ser necessário instalar as b
 sudo apt install gcc-multilib
 ```
 
----
 
 ## 📌 Conteúdos dos Exercícios
 
@@ -61,7 +60,6 @@ sudo apt install gcc-multilib
 | `05-inverter-string` | Inverte uma string dada pelo usuário. |
 | ...                 | Outros exercícios serão adicionados futuramente. |
 
----
 
 ## 🛠️ Requisitos
 
@@ -73,6 +71,4 @@ Para instalar o NASM no Ubuntu/Debian:
 ```sh
 sudo apt update && sudo apt install nasm
 ```
-
----
 
